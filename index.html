@@ -1,0 +1,71 @@
+<!-- TODO: This is my assignment about HTML for the best programming education platform, freeCodeCamp. André Nicolas, Brazil. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>CatPhotoApp</title>
+</head>
+<body>
+<main>
+  <h1>CatPhotoApp</h1>
+  <!-- TODO: Section element in HTML is used to define a thematic grouping of content, typically with a heading, within a document. It's meant to represent a standalone section that is relevant to a particular theme. -->
+  <section>
+    <h2>Cat Photos</h2>
+    <!-- TODO: Add link to cat photos -->
+    <p>See more <a target="_blank" href="https://freecatphotoapp.com">cat photos</a> in our gallery.</p>
+    <a href="https://freecatphotoapp.com"><img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back."></a>
+  </section>
+  <section>
+    <h2>Cat Lists</h2>
+    <h3>Things cats love:</h3>
+    <!-- TODO: Add a list of three things cats love -->
+    <ul>
+      <li>cat nip</li>
+      <li>laser pointers</li>
+      <li>lasagna</li>
+    </ul>
+    <!-- TODO: A figure element in HTML is used to group media content, like images or diagrams, along with their captions.  -->
+    <figure>
+      <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg" alt="A slice of lasagna on a plate.">
+      <figcaption>Cats <em>love</em> lasagna.</figcaption>
+    </figure>
+    <!-- TODO: Add a list of three things cats hate -->
+    <h3>Top 3 things cats hate:</h3>
+    <ol>
+      <li>flea treatment</li>
+      <li>thunder</li>
+      <li>other cats</li>
+    </ol>
+    <figure>
+      <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg" alt="Five cats looking around a field.">
+      <figcaption>Cats <strong>hate</strong> other cats.</figcaption>
+    </figure>
+  </section>
+  <section>
+    <h2>Cat Form</h2>
+    <form action="https://freecatphotoapp.com/submit-cat-photo">
+      <!-- TODO: The <fieldset> element in HTML is used to group related elements within a form. It helps to create a visual and logical grouping of form controls, making the form easier to understand. It often works alongside the <legend> element, which provides a caption for the grouped controls.  -->
+      <fieldset>
+        <legend>Is your cat an indoor or outdoor cat?</legend>
+        <!-- TODO: The <label> element in HTML is used to define a label for an input element, making forms more accessible and easier to use. It binds a text description to a form element. When the label is clicked, it moves the focus to the associated input element. -->
+        <label><input id="indoor" type="radio" name="indoor-outdoor" value="indoor" checked> Indoor</label>
+        <label><input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor"> Outdoor</label>
+      </fieldset>
+      <fieldset>
+        <legend>What's your cat's personality?</legend>
+        <input id="loving" type="checkbox" name="personality" value="loving" checked> <label for="loving">Loving</label>
+        <input id="lazy" type="checkbox" name="personality" value="lazy"> <label for="lazy">Lazy</label>
+        <input id="energetic" type="checkbox" name="personality" value="energetic"> <label for="energetic">Energetic</label>
+      </fieldset>
+      <input type="text" name="catphotourl" placeholder="cat photo URL" required>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+</main>
+<!-- TODO: The <footer> element in HTML is used to define the footer of a section or the entire document. This typically contains information like the author's contact info, copyright details, or links to related content. -->
+<footer>
+  <p>
+    No Copyright - <a href="https://www.freecodecamp.org">freeCodeCamp.org</a>
+  </p>
+</footer>
+</body>
+</html>
